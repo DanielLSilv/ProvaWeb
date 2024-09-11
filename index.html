@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="venda.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>CALCULA MEDIA DE LIVROS</h1>
+    <div class="formulario">
+        <form id="form">
+            <div class="campo">
+                <label> QUANTIDADE DE LIVROS</label>
+                <input type="number" id="quantLivros"> <br><br>
+            </div>
+
+            <div class="campo">
+                <label>PREÇO TOTAL DOS LIVROS</label>
+                <input type="number" id="totalDoValorLivros"><br><br>
+            </div>
+
+            <div class="buttons">
+                <button type="button" onclick="preencherVetor()">Cadastrar</button>
+                <button type="button" onclick="excluirDado()">Remover</button>
+                <button type="button" onclick="limpar()">Limpar</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="tabela">
+        <table id="tabela">
+            <tr>
+                <th>ID</th>
+                <th>QUANTIDADE DE LIVROS</th>
+                <th>VALOR TOTAL DE LIVROS</th>
+                <th>MEDIA</th>
+            </tr>
+        </table>
+    </div>
+    <script src="venda.js"></script>
+</body>
+
+</html>
